@@ -2,7 +2,7 @@ class Please < Formula
   desc "Interact with your terminal in natural language; all inference stays local."
   homepage "https://github.com/xhjkl/please"
   license "MIT"
-  version "ci-20251101-133112-8ca155a"
+  version "ci-20251101-134402-8b06a00"
 
   livecheck do
     url :url
