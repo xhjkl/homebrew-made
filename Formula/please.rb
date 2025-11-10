@@ -2,7 +2,7 @@ class Please < Formula
   desc "Interact with your terminal in natural language; all inference stays local."
   homepage "https://github.com/xhjkl/please"
   license "MIT"
-  version "ci-20251101-145913-e88ea32"
+  version "ci-20251110-180325-0221d3a"
 
   livecheck do
     url :url
@@ -12,7 +12,7 @@ class Please < Formula
   on_macos do
     on_arm do
       url "https://github.com/xhjkl/please/releases/download/#{version}/please-darwin-arm64", using: :nounzip
-      sha256 "1c676ffd6e7a0533ca4b783b20b309385abd2cbfa9f09af130770f82f3a46095"
+      sha256 "ca449cb0482e7fd0bea74602f615c2a9952c6506e3e3537da102798eb70b1a52"
     end
 
     on_intel do
@@ -23,12 +23,12 @@ class Please < Formula
   on_linux do
     on_intel do
       url "https://github.com/xhjkl/please/releases/download/#{version}/please-linux-x86_64", using: :nounzip
-      sha256 "599e636a3fdbce0ce9936e532792184810a515857290438f60eec7399b4682ba"
+      sha256 "e79bbe989936673b6270ac365f17ea0ce7d73f60ebc700d4a9164db7d7c0663b"
     end
 
     on_arm do
       url "https://github.com/xhjkl/please/releases/download/#{version}/please-linux-arm64", using: :nounzip
-      sha256 "a4e5970e3f21d07347865e4e8f3e5795cbcd693ea877c6a7849bf0f12af38234"
+      sha256 "aea2950b06c0b1f4ac7b3969f4c1141d65b485a5d443ab3c43fc35fd74ab72c3"
     end
   end
 
