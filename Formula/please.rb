@@ -2,18 +2,18 @@ class Please < Formula
   desc "Interact with your terminal in natural language; all inference stays local"
   homepage "https://github.com/xhjkl/please"
   license "MIT"
-  version "2611.1"
+  version "2611.22"
 
   livecheck do
     url :url
-    regex(/\Av(\d{4}\.[1-9]\d*)\z/)
+    regex(/\A(\d{4}\.[1-9]\d*)\z/)
     strategy :github_latest
   end
 
   on_macos do
     on_arm do
-      url "https://github.com/xhjkl/please/releases/download/v#{version}/please-darwin-arm64", using: :nounzip
-      sha256 "237b94631776fef17b1bc6f6d8be4739f1fc4d75a90a28108a14f3fb4e581150"
+      url "https://github.com/xhjkl/please/releases/download/#{version}/please-darwin-arm64", using: :nounzip
+      sha256 "cd97d05fe363d19e03547ddcebadd85222eef92ba66041ec2f48f6eb55e4d271"
     end
 
     on_intel do
@@ -23,13 +23,13 @@ class Please < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/xhjkl/please/releases/download/v#{version}/please-linux-x86_64", using: :nounzip
-      sha256 "eb4ee1f6bed687285647d71906ba749f15774c856fe4f31077d07684ce896813"
+      url "https://github.com/xhjkl/please/releases/download/#{version}/please-linux-x86_64", using: :nounzip
+      sha256 "97f79a081b2794decd66c0549ba651ede2a103a84e2b06ce0851e37073f62c1c"
     end
 
     on_arm do
-      url "https://github.com/xhjkl/please/releases/download/v#{version}/please-linux-arm64", using: :nounzip
-      sha256 "8fbb3ce93b3dddeb710f2f6d6abcd45abcf637ada359af19373b531e587efd13"
+      url "https://github.com/xhjkl/please/releases/download/#{version}/please-linux-arm64", using: :nounzip
+      sha256 "3ea1fb1e1a635b197a78eb0e1483ed738a8b8bb19804e527c1739bf4cb60ffd2"
     end
   end
 
